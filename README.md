@@ -13,7 +13,7 @@ E-Shop Express is an intelligent e-commerce product comparator that helps users 
 
 - **Fraud Protection:** Use algorithms to detect scam listings and protect users from fake products and sellers.
 
-###🔍 Features
+### 🔍 Features
 - 📦 Product Search and Comparison (Amazon & Flipkart)
 
 - 🔍 Real-Time Web Scraping with Selenium
