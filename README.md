@@ -1,27 +1,85 @@
-# ProdComparitor
+# 🛍️ E-Commerce Product Comparator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
 
-## Development server
+### 📌 Project Overview
+E-Shop Express is an intelligent e-commerce product comparator that helps users make informed purchase decisions by offering side-by-side comparisons of products across top online marketplaces such as Amazon and Flipkart. The system ensures authentic reviews, detects fake feedback, and provides real-time sentiment analysis using machine learning.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 🎯 Objectives
+- **Assist Purchases:** Empower users to make smart buying decisions by comparing products across multiple platforms.
 
-## Code scaffolding
+- **Review Transparency:** Identify and mitigate fake reviews to ensure authentic feedback using sentiment analysis.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Seamless Experience:** Provide a user-friendly interface with intuitive navigation and quick access to product details and reviews.
 
-## Build
+- **Fraud Protection:** Use algorithms to detect scam listings and protect users from fake products and sellers.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+###🔍 Features
+- 📦 Product Search and Comparison (Amazon & Flipkart)
 
-## Running unit tests
+- 🔍 Real-Time Web Scraping with Selenium
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- 🧠 Sentiment Analysis with SGDClassifier (Scikit-learn)
 
-## Running end-to-end tests
+- 🌍 Multilingual Support using Azure Translator API
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- ⚡ Backend powered by FastAPI
 
-## Further help
+- 🌐 Responsive Frontend with Angular & Bootstrap
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- 📊 Review Visualization using Chart.js
+
+
+
+- 📷 Screenshots
+🔹 Home Page
+![alt text](image.png)
+User-friendly interface for product search and navigation
+
+🔹 Analyze Page
+![alt text](image-1.png)
+Visual review analysis with sentiment detection
+
+🔹 Comparison Page
+![alt text](image-2.png)
+Product comparison across multiple platforms
+
+### 🛠️ Technologies Used
+| Technology           | Purpose                                           |
+|----------------------|---------------------------------------------------|
+| Python               | Backend, Web Scraping, Sentiment Analysis         |
+| Selenium             | Scraping live product and review data             |
+| Scikit-learn         | Review Classification and Sentiment Detection     |
+| FastAPI              | Backend API development                           |
+| Angular              | Frontend UI framework                             |
+| Bootstrap            | UI Styling and Responsiveness                     |
+| Chart.js             | Graphical representation of review sentiments     |
+| Azure Translator API | Translating regional reviews to English           |
+
+
+### 🔄 System Architecture & Diagrams
+**Use Case Diagram**
+![alt text](image-3.png)
+
+**Activity Diagram**
+![alt text](image-4.png)
+
+**Entity Relationship (ER) Diagram**
+![alt text](image-5.png)
+
+**Flowchart**
+![alt text](image-6.png)
+
+
+
+### ⚠️ Limitations
+- ⏳ **Loading Time:** Fetching and analyzing data may result in delays.
+
+- 🧊 **Cold Start Problem:** Limited data for new products reduces accuracy.
+
+- 📈 **Scalability:** Performance may degrade with increasing users or product data volume.
+
+- 🌐 **Language Barrier:** Regional reviews may be mistranslated due to detection issues.
+
+
+## ✅ Conclusion
+This mini project has effectively demonstrated how modern tools like Python, Selenium, FastAPI, Scikit-learn, and Azure Translator API can be integrated to build a smart, reliable product comparison engine. It ensures a balance of functionality, performance, and user trust, and sets the groundwork for future advancements in e-commerce analytics.
