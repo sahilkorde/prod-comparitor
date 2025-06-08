@@ -30,7 +30,7 @@ E-Shop Express is an intelligent e-commerce product comparator that helps users 
 
 
 
-- 📷 Screenshots
+### 📷 Screenshots
 🔹 Home Page
 ![alt text](image.png)
 User-friendly interface for product search and navigation
