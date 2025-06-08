@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <div *ngIf="!product" class="vh-100">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <div class="d-flex">
+        <div class="border rounded-5 p-3 bg-white">
+            <img [src]="product.image" style="max-height: 30rem;">
+        </div>
+        <div class="border border-white mx-5">
+
+        </div>
+        <div>
+            <h3 class="fw-bold">{{product.title}}</h3>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <h5>Price : <i class="bi bi-currency-rupee"></i>{{product.price}}/-</h5>
+                <h5>Avg Ratting: {{product.avg_ratting}} </h5>
+                <h5>Total Rattings: {{product.total_ratting}} </h5>
+            </div>
+            <hr>
+            <div>
+                <div class="d-flex justify-content-between">
+                    <span class="fs-4 fw-bold">Total Reviews: {{product.total_reviews}}</span>
+                    <span class="badge bg-body-tertiary align-content-center"><i>sample of first 100 reviews is
+                            used.</i></span>
+                </div>
+                <div class="d-flex justify-content-between fw-bolder mt-4">
+                    <span class="text-success">Positive Reviews: {{product.positive_reviews}}</span><br>
+                    <span class="text-warning">Negative Reviews: {{product.negative_reviews}}</span><br>
+                    <span class="text-danger">Fake Reivews: {{product.total_fake_reviews}}</span><br>
+                </div>
+
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <canvas id="MyChart"></canvas>
+                </div>
+                <div class="col">
+                    <canvas id="MyChart1"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<!-- 
+{
+    "title": "Motorola Edge 50 Fusion (Hot Pink, 128 GB)  (8 GB RAM)",
+    "pirce": "22999",
+    "avg_ratting": "4.5",
+    "total_ratting": 15934,
+    "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/i/k/l/edge-50-fusion-pb300001in-motorola-original-imahywzpfd2jh9ep.jpeg?q=70&crop=false",
+    "Highlight": [
+      "8 GB RAM | 128 GB ROM",
+      "17.02 cm (6.7 inch) Full HD+ Display",
+      "50MP + 13MP | 32MP Front Camera",
+      "5000 mAh Battery",
+      "7s Gen 2 Processor"
+    ],
+    "description": "NA\n50 MP Ultra Pixel OIS Camera with Sony - LYTIA 700C Senor\n4K Video Recording in 13MP Ultrawide+Macro Cam and 32 MP Front Cam\nIP68 Underwater Protection with Smart Water Touch\nBeautifully Crafted Endless Edge Design in Vegan Leather Finish\n144 Hz 3D Curved Display with Gorilla Glass 5 Protection\nSnapdragon 7s Gen 2 and upto 12 GB RAM\n68 W TurboPower Charging with 5000 mAh Battery\nHello UI Based Android 14 with 3 Years OS Update",
+    "total_reviews": 845,
+    "total_fake_reviews": 26,
+    "positive_reviews": 92,
+    "negative_reviews": 8
+  } -->

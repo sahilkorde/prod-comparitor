@@ -1,0 +1,33 @@
+<div class="container p-3">
+    <h1>
+        Product Analyzer
+    </h1>
+    <hr>
+    <div class="pt-5">
+        <form>
+            <div class="row">
+                <div class="mb-3 col-8">
+                    <label for="productURL" class="form-label">URL</label>
+                    <input type="url" class="form-control" id="productURL" aria-describedby="product URL"
+                        placeholder="www.abc.com/example/" #productURL>
+                </div>
+                <div class="mb-3 col">
+                    <label for="platform" class="form-label">Platform</label>
+                    <select id="platform" class="form-select" aria-label="Default select example" #platfrom>
+                        <option value="">Select platform</option>
+                        <option value="Amazon">Amazon</option>
+                        <option value="Flipkart">Flipkart</option>
+                    </select>
+                </div>
+                <div class="mb-3 col align-content-end">
+                    <button type="button" class="btn btn-warning text-dark fw-bold form-control" (click)="Analyze(productURL.value, platfrom.value)">Analyze</button>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <app-analuze-view *ngIf="show"  [url]="url" [platform]="platfromname">
+
+        </app-analuze-view>
+
+    </div>
+</div>

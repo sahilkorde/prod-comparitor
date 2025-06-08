@@ -1,0 +1,63 @@
+<div class="container p-3">
+    <h1>
+        Product comparator
+    </h1>
+    <hr>
+    <div class="pt-5">
+        <div>
+            <div class="row">
+                <div class="col-10">
+                    <!-- product 1 -->
+                    <div class="row">
+                        <div class="col align-content-center fs-4">
+                            <label class="form-label">Product 1 : </label>
+                        </div>
+                        <div class="mb-3 col-8">
+                            <input type="url" class="form-control" id="product1URL" aria-describedby="product URL"
+                                placeholder="www.abc.com/example/" #product1url>
+                        </div>
+                        <div class="mb-3 col">
+                            <select id="platform1" class="form-select" aria-label="Default select example" #platform1>
+                                <option value="">Select platform</option>
+                                <option value="Amazon">Amazon</option>
+                                <option value="Flipkart">Flipkart</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- product 2 -->
+                    <div class="row">
+                        <div class="col align-content-center fs-4">
+                            <label class="form-label">Product 2 :</label>
+                        </div>
+                        <div class="mb-3 col-8">
+                            <input type="url" class="form-control" id="product2URL" aria-describedby="product URL"
+                                placeholder="www.abc.com/example/" #product2url>
+                        </div>
+                        <div class="mb-3 col">
+                            <select id="platform2" class="form-select" aria-label="Default select example" #platform2>
+                                <option value="">Select platform</option>
+                                <option value="Amazon">Amazon</option>
+                                <option value="Flipkart">Flipkart</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col align-content-center">
+                    <button type="button" class="btn btn-warning text-dark fw-bold col"
+                        (click)="compair()">Compare</button>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-around" *ngIf="show">
+                <div class="w-50 p-4">
+                    <app-compair-view [side]="'left'" [url]="product1url.value"
+                        [platform]="platform1.value"></app-compair-view>
+                </div>
+                <div class="border"></div>
+                <div class="w-50 p-4">
+                    <app-compair-view [side]="'right'" [url]="product2url.value"
+                        [platform]="platform2.value"></app-compair-view>
+                </div>
+            </div>
+        </div>
+    </div>

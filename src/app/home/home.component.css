@@ -1,0 +1,11 @@
+#Cover {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.852), rgba(62, 65, 81, 0.5)),
+    url("../../assets/images/background.png");
+
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}

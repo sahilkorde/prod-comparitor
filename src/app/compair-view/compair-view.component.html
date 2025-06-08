@@ -1,0 +1,41 @@
+<div *ngIf="!product" class="vh-100">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+<div>
+    <div class="bg-white p-2 rounded-3 text-center">
+        <img [src]="product.image" alt="" style="height: 30rem;">
+    </div>
+    <hr>
+    <div>
+        <h4>{{product.title}}</h4>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between">
+        <h5>Price : <i class="bi bi-currency-rupee"></i>{{product.price}}/-</h5>
+        <h5>Avg Ratting: {{product.avg_ratting}} </h5>
+        <h5>Total Rattings: {{product.total_ratting}} </h5>
+    </div>
+    <hr>
+    <div>
+        <div class="d-flex justify-content-between">
+            <span class="fs-4 fw-bold">Total Reviews: {{product.total_reviews}}</span>
+            <span class="badge bg-body-tertiary align-content-center"><i>sample of first 100 reviews is
+                    used.</i></span>
+        </div>
+        <div class="d-flex justify-content-between fw-bolder mt-4">
+            <span class="text-success">Positive Reviews: {{product.positive_reviews}}</span><br>
+            <span class="text-warning">Negative Reviews: {{product.negative_reviews}}</span><br>
+            <span class="text-danger">Fake Reivews: {{product.total_fake_reviews}}</span><br>
+        </div>
+
+    </div>
+    <hr>
+    <div class="col p-5 ">
+        <canvas id="MyChart">{{ SentimentChart }}</canvas>
+        <hr>
+        <canvas id="MyChart1">{{ FakeRewiesChart }}</canvas>
+
+    </div>
+</div>
